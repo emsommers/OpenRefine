@@ -50,6 +50,9 @@ Column > `Edit column > Add column based on this column...`
 * Replace `value` with the term you want to fill down in quotation marks
   * “File”
 
+Also useful for creating a URL column based on an ID column. Example:
+`'https://archive.org/details/'+value`
+
 ## Add leading zeros
 Why this is useful?
 * Quickly add leading zeros to boxes or file numbers so that they are consistent lengths
@@ -85,6 +88,7 @@ Expression:
 
 `‘B1991-0013’ + ‘/’ + value + ‘(‘ + cells[‘columnName’].value + ‘)’`
 
+^ In this example, I am appending an accession number to a values in a box and file number column so that it reads `B1991-0013/box(file)`
 
 ## Split column into multiple columns
 Why this is useful?
@@ -111,6 +115,7 @@ If column name has spaces, put it into brackets and remove . before cells, like 
 
 
 ## Add slug to all files from one series
+This assumes you have a column identifying what series each row is in
 Select series column > `Facet > Text facet` 
 
 If there is already a slug column:
