@@ -96,14 +96,14 @@ Column > `Edit column > Split into several columns...`
 ## Create a custom facet
 * To facet multiple columns at once (e.g. subject terms spread out over multiple columns)
 
-Select first subject column: 
+Select first subject column then 
 `Facet > Custom Text Facet`
 
 Expression:
 
 `[cells.Subject1.value, cells.Subject2.value, cells.Subject3.value]`
 
-where `'Subject1'` = column name
+where `Subject1` = column name
 
 If column name has spaces, put it into brackets and remove . before cells, like so:
 
@@ -126,7 +126,7 @@ If there is no slug column:
 ## Clean up dates
 ![“ISO 8601”, XKCD,](https://imgs.xkcd.com/comics/iso_8601.png )
 
-Image: ["ISO 8601", XKCD](https://xkcd.com/1179/)
+*Image:* ["ISO 8601", XKCD](https://xkcd.com/1179/)
 
 Why this is useful?
 * Sometimes you need to turn free text field with approximate dates, into machine-readable dates to support date range searching and sorting
