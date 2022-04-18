@@ -15,6 +15,7 @@ Common examples of [OpenRefine](https://openrefine.org/download.html) expression
     + [When you have start and endDate columns and you want to populate the endDate column with the same value as start (if there was nothing to split!)](#when-you-have-start-and-enddate-columns-and-you-want-to-populate-the-enddate-column-with-the-same-value-as-start--if-there-was-nothing-to-split--)
     + [Remove various characters, punctuation, and circa notations](#remove-various-characters--punctuation--and-circa-notations)
     + [Converting free-text dates to ISO-8601 machine readable](#converting-free-text-dates-to-iso-8601-machine-readable)
+  * [Merge multiple worksheets into one](#merge-multiple-worksheets-into-one)
   * [Other common transformations](#other-common-transformations)
   * [Sources](#sources)
 
@@ -181,6 +182,12 @@ value.replace(‘Jan. ‘, ’01’).replace(‘Feb. ‘, ’02’).replace(‘M
     * `Edit cells > Transform`
     *  `cells[‘year’].value + ‘-’ + cells[‘month’].value + ‘-’ + cells[‘day’].value`
 
+## Merge multiple worksheets into one
+Sometime when drafting descriptions, it's easier to create seperate worksheets for each series. But to upload to AtoM, it is easier if it is all in one. If the column headers for each sheet are all the same (and in the same order).
+* Create Project > *select .xlsx file*
+* Select which worksheets to import
+  * Optional: create new column with file source information for each row
+![Screenshot showing how to configure parsing options for new project in OpenRefine](https://user-images.githubusercontent.com/86034500/163831648-81e009a8-5828-4486-a581-88f939aef666.png)
 
 ## Other common transformations
 
@@ -188,7 +195,7 @@ value.replace(‘Jan. ‘, ’01’).replace(‘Feb. ‘, ’02’).replace(‘M
 
 Column > `Edit cells > Common transforms`
 
-* Delete blanks
+* Delete blanks!
 * Remove whitespace
 * Unescape HTML entities
 * To titlecase
