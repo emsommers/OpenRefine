@@ -16,6 +16,7 @@ Common examples of [OpenRefine](https://openrefine.org/download.html) expression
     + [Remove various characters, punctuation, and circa notations](#remove-various-characters--punctuation--and-circa-notations)
     + [Converting free-text dates to ISO-8601 machine readable](#converting-free-text-dates-to-iso-8601-machine-readable)
   * [Merge multiple worksheets into one](#merge-multiple-worksheets-into-one)
+  * [Reconciling data against another source](#reconciling-data-against-another-source)
   * [Other common transformations](#other-common-transformations)
   * [Sources](#sources)
 
@@ -188,6 +189,10 @@ Sometime when drafting descriptions, it's easier to create seperate worksheets f
 * Select which worksheets to import
   * Optional: create new column with file source information for each row
 ![Screenshot showing how to configure parsing options for new project in OpenRefine](https://user-images.githubusercontent.com/86034500/163831648-81e009a8-5828-4486-a581-88f939aef666.png)
+
+## Reconciling data against another source
+* [Library Carpentry instructions](https://librarycarpentry.org/lc-open-refine/13-looking-up-data/index.html)
+* [List of endpoints](https://reconciliation-api.github.io/testbench/#/)
 
 ## Other common transformations
 
