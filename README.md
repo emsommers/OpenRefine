@@ -183,6 +183,16 @@ value.replace(‘Jan. ‘, ’01’).replace(‘Feb. ‘, ’02’).replace(‘M
     * `Edit cells > Transform`
     *  `cells[‘year’].value + ‘-’ + cells[‘month’].value + ‘-’ + cells[‘day’].value`
 
+---
+
+When converting to date (*Edit cells > Common transform > to date*), output will often look like this:
+
+```1981-03-01T00:00:00Z```
+
+To change it to simple YYYY-MM-DD:
+* Edit cells > Transform > **value.toString('YYYY-MM-dd')**
+
+
 ## Merge multiple worksheets into one
 Sometime when drafting descriptions, it's easier to create seperate worksheets for each series. But to upload to AtoM, it is easier if it is all in one. If the column headers for each sheet are all the same (and in the same order).
 * Create Project > *select .xlsx file*
