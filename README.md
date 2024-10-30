@@ -10,6 +10,7 @@ Common examples of [OpenRefine](https://openrefine.org/download.html) expression
   * [Split column into multiple columns](#split-column-into-multiple-columns)
   * [Create a custom facet](#create-a-custom-facet)
   * [Add slug to all files from one series](#add-slug-to-all-files-from-one-series)
+  * [Trim data](#trim-data)
   * [Clean up dates](#clean-up-dates)
     + [Split dates into two columns (e.g. start and end)](#split-dates-into-two-columns--eg-start-and-end-)
     + [When you have start and endDate columns and you want to populate the endDate column with the same value as start (if there was nothing to split!)](#when-you-have-start-and-enddate-columns-and-you-want-to-populate-the-enddate-column-with-the-same-value-as-start--if-there-was-nothing-to-split--)
@@ -129,6 +130,11 @@ If there is no slug column:
 * New column name: `qubitParentSlug`
 * Expression: change `“value”` to `“your-series-slug”`
 
+## Trim data
+For example: B2001-0003/001(01) to B2001-0003/001
+* Slug colum > `Edit cells > Transform`
+* Expression: `value.substring(0,14)`
+  * Keep first 14 characters
 
 ## Clean up dates
 ![“ISO 8601”, XKCD,](https://imgs.xkcd.com/comics/iso_8601.png )
